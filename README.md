@@ -1,14 +1,18 @@
 ---
 page_type: sample
 languages:
-- csharp
+- azurepowershell
+- powershell
 products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+- azure
+- azure-security-center
+- azure-virtual-machines
+- azure-virtual-machines-windows
+description: "Azure DFIR resources"
+urlFragment: "msrc-dfir"
 ---
 
-# Official Microsoft Sample
+# DFIR tools and references used by MSRC's Azure SOC
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -18,36 +22,35 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-Give a short description for your sample here. What does it do and why is it important?
+This repo contains some scripts and reference information that the Microsoft Security Response Center's (MSRC) Azure SOC team uses to perform their work. While the SOC cannot release everything they use internally, what can be made public will be shared here over time.
 
 ## Contents
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
-
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
-| `README.md`       | This README file.                          |
-| `LICENSE`         | The license for the sample.                |
+| File/folder       | Description                                 |
+|-------------------|---------------------------------------------|
+| `scripts`         | PowerShell and bash scripts.                |
+| `media`           | Images used in READMEs.                     |
+| `CHANGELOG.md`    | List of changes to the samples.             |
+| `CONTRIBUTING.md` | Guidelines for contributing to the samples. |
+| `README.md`       | This README file.                           |
+| `LICENSE`         | The license for the samples.                |
+<!--| `.gitignore`      | Define what to ignore at commit time.      |-->
 
 ## Prerequisites
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+The prerequisites for each script is defined in the script itself.
 
 ## Setup
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
+Setup is the same deal as the prerequisites - each will be defined in the script or accompanying README documentation.
 
 ## Running the sample
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+Same as with setup and prereqs - each will be defined in the script or accompanying README documentation.
 
 ## Key concepts
 
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+This is provided to give SOC analysis and others involved in performing DFIR work examples and references on how they may be able to effectively perform their jobs in the Azure ecosystem.
 
 ## Contributing
 
